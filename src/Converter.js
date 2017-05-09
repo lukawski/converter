@@ -5,7 +5,8 @@ class Converter {
 
   convert (currency, value) {
     const currencyRule = this.currencies[currency]
-    var converted = currencyRule * (1 + (Math.random() * 100) / 1000)
+    const course = currencyRule * (1 + (Math.random() * 100) / 1000)
+    var converted = course * value
 
     return converted
   }
