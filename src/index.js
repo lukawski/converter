@@ -1,3 +1,6 @@
+import Converter from './Converter.js'
+import History from './History.js'
+
 const converter = new Converter({eur: 4, pln: 4.4})
 const history = new History()
 const convertButton = document.getElementById('convert')
