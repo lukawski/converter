@@ -1,4 +1,4 @@
-class Converter {
+export default class Converter {
   constructor (currencies) {
     this.currencies = currencies
   }
