@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body>
-    <section>
-        <header>
-            <h1>Convert <span>eur</span> to <span>pln</span></h1>
-        </header>
+    <main class="container">
+        <section class="converter-section">
+            <header class="converter-heading">
+                <h1>Convert <span class="upper bold">eur</span> to <span class="upper bold">pln</span></h1>
+            </header>
 
-        <div>
-            <input type="text" id="value">
-            <button type="button" id="convert">CONVERT</button>
-        </div>
-    </section>
+            <div>
+                <input type="text" id="value">
+                <button type="button" id="convert">CONVERT</button>
+            </div>
+        </section>
 
-    <section id="history">
-    </section>
-
+        <section id="history" class="history-section">
+        </section>
+    </main>
     <script src="dist/bundle.js"></script>
 </body>
 </html>

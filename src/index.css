@@ -1,3 +1,31 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    font-size: 120%;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+}
+
+.converter-section {
+    width: 100%;
+    text-align: center;
+}
+
+.history-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tile {
+    width: 35%;
+    text-align: center;
+}

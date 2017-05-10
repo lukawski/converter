@@ -13,7 +13,7 @@ convertButton.addEventListener('click', e => {
   if (isNaN(convertInput.value)) return false
 
   var userValue = Number(convertInput.value)
-  var convertedValue = converter.convert('eur', userValue)
+  var convertedValue = converter.convert('eur', userValue).toFixed(2)
 
   history.add({ value: convertedValue, date: new Date()})
 

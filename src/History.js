@@ -15,6 +15,7 @@ export default class History {
 
   createHTMLElement (element) {
     var el = document.createElement('div')
+    el.classList.add('tile')
     var month = element.date.getMonth() > 9 ? element.date.getMonth() : `0${element.date.getMonth()}`
     var day = element.date.getDate() > 9 ? element.date.getDate() : `0${element.date.getDate()}`
     var hour = element.date.getHours() > 9 ? element.date.getHours() : `0${element.date.getHours()}`
