@@ -1,19 +1,33 @@
 const path = require('path')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist')
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
-    loaders: [
-      { test: /\.js$/,
+    rules: [
+      {
+        test: /\.js$/,
         loader: 'babel-loader',
-        exclude: '/node_modules/',
         query: {
           presets: ['env']
         }
-      }]
-  }
+      },
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader'
+        })
+      }
+    ]
+  },
+  plugins: [
+    new UglifyJSPlugin(),
+    new ExtractTextPlugin('styles.css')
+  ]
 }
