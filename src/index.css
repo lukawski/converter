@@ -49,6 +49,11 @@ body {
     margin-bottom: 3px;
 }
 
+.i-b-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .converter-input, .converter-button {
     width: 50%;
     outline: none;
@@ -88,10 +93,10 @@ body {
 }
 
 .tile {
-    width: 45%;
+    width: 35%;
     text-align: left;
     margin: 1rem;
-    transition: all 3s;
+    font-size: 1.3em;
 }
 
 .tile-title {
@@ -110,4 +115,10 @@ body {
 
 .tile-date {
     color: #808080;
+}
+
+@media (max-width: 425px) {
+    .tile-amount {
+        font-size: 1em;
+    }
 }
