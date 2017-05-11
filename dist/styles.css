@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 95%;
+    font-size: 65%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -13,6 +13,14 @@ body {
 
 .upper {
     text-transform: uppercase;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .container {
@@ -28,11 +36,6 @@ body {
 .converter-heading {
     font-size: 1.5em;
     font-weight: normal;
-    text-align: left;
-}
-
-.bold {
-    font-weight: bold;
 }
 
 .converter {
@@ -43,23 +46,39 @@ body {
 .converter-input-label {
     display: block;
     color: #808080;
-    text-align: left;
+    margin-bottom: 3px;
+}
+
+.converter-input, .converter-button {
+    width: 50%;
+    outline: none;
+    border:1px solid #cccccc;
+    padding: 0.5em;
+    font-size: 1.8em;
 }
 
 .converter-input {
-    outline: none;
-    width: 49%;
     border-radius:10px 0px 0px 10px;
     -moz-border-radius:10px 0px 0px 10px;
     -webkit-border-radius:10px 0px 0px 10px;
-    padding: 0.3em;
-    font-size: 1.7em;
-    font-weight: bold;
     border:1px solid #cccccc;
+    border-right: 0px;
 }
 
 .converter-button {
-    width: 50%;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
+    border:1px solid #cccccc;
+    border-left: 0px;
+    background: #00E676;
+    color: white;
+    transition: all 0.2s;
+}
+
+.converter-button:hover {
+    background: #00ff84;
+    cursor: pointer;
 }
 
 .history-section {
@@ -69,6 +88,26 @@ body {
 }
 
 .tile {
-    width: 50%;
+    width: 45%;
+    text-align: left;
+    margin: 1rem;
+    transition: all 3s;
+}
+
+.tile-title {
+    color: #808080;
+}
+
+.tile-content {
     text-align: center;
+    background: white;
+    padding: 5px;
+}
+
+.tile-amount {
+    font-size: 2.5em;
+}
+
+.tile-date {
+    color: #808080;
 }
