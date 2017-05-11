@@ -1,4 +1,4 @@
-import Style from './index.css'
+import './index.css'
 import Converter from './Converter.js'
 import History from './History.js'
 

@@ -3,7 +3,12 @@
 }
 
 html {
-    font-size: 120%;
+    font-size: 95%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: whitesmoke;
 }
 
 .upper {
@@ -11,12 +16,50 @@ html {
 }
 
 .container {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .converter-section {
     width: 100%;
     text-align: center;
+}
+
+.converter-heading {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.converter {
+    padding: 15px;
+    background: white;
+}
+
+.converter-input-label {
+    display: block;
+    color: #808080;
+    text-align: left;
+}
+
+.converter-input {
+    outline: none;
+    width: 49%;
+    border-radius:10px 0px 0px 10px;
+    -moz-border-radius:10px 0px 0px 10px;
+    -webkit-border-radius:10px 0px 0px 10px;
+    padding: 0.3em;
+    font-size: 1.7em;
+    font-weight: bold;
+    border:1px solid #cccccc;
+}
+
+.converter-button {
+    width: 50%;
 }
 
 .history-section {
@@ -26,6 +69,6 @@ html {
 }
 
 .tile {
-    width: 35%;
+    width: 50%;
     text-align: center;
 }
