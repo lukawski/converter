@@ -100,16 +100,27 @@ body {
     position: relative;
 }
 
+.tile::before {
+    content: "";
+    position: absolute;
+    border-left: solid 2px #808080;
+    border-bottom: solid 2px #808080;
+    width: 4px;
+    height: 4px;
+    top: 92%;
+    left: 5px;
+}
+
 .tile::after {
     content: "";
     position: absolute;
     left: 0;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: solid 2px #595959;
+    border: solid 2px #808080;
 }
 
 .tile-title {
