@@ -21,8 +21,8 @@ export default class History {
     var hour = element.date.getHours() > 9 ? element.date.getHours() : `0${element.date.getHours()}`
     var min = element.date.getMinutes() > 9 ? element.date.getMinutes() : `0${element.date.getMinutes()}`
 
-    el.innerHTML = `<p class="upper">pln amount</p> <h1>${element.value}</h1> 
-                    <time>${element.date.getFullYear()}.${month}.${day} ${hour}:${min}</time>`
+    el.innerHTML = `<div class="tile-content"><p class="upper tile-title">pln amount</p> <h1 class="tile-amount">${element.value}</h1></div> 
+                    <time class="tile-date">${element.date.getFullYear()}.${month}.${day} ${hour}:${min}</time>`
     return el
   }
 }

@@ -9,13 +9,13 @@
 <body>
     <main class="container">
         <section class="converter-section">
-            <header class="converter-heading">
-                <h1>Convert <span class="upper bold">eur</span> to <span class="upper bold">pln</span></h1>
+            <header>
+                <h1 class="converter-heading text-left">Convert <span class="upper bold">eur</span> to <span class="upper bold">pln</span></h1>
             </header>
 
-            <div>
-                <input type="text" id="value">
-                <button type="button" id="convert">CONVERT</button>
+            <div class="converter">
+                <label for="value" class="upper converter-input-label text-left">enter <span class="bold">eur</span> amount</label>
+                <div class="i-b-wrapper"><input type="text" id="value" class="converter-input bold"><button type="submit" id="convert" class="converter-button bold">CONVERT TO PLN</button></div>
             </div>
         </section>
 
