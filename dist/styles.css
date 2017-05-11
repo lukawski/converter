@@ -141,10 +141,26 @@ body {
 .tile-date {
     color: #808080;
     margin-left: 20px;
+    white-space: nowrap;
 }
 
 @media (max-width: 425px) {
+    .converter-button {
+        font-size: 1.5em;
+    }
+
     .tile-amount {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 550px) {
+    .tile::after, .tile::before {
+        display: none;
+    }
+
+    .tile-date {
+        margin: 0;
+        white-space: normal;
     }
 }
