@@ -4,3 +4,6 @@
 ### How to run
 1. `npm i`
 2. `npm serve`
+
+### Przebieg prac
+Projekt zajął lacznie 5h. Najwięcej czasu poświęciłem na dopasowanie styli oraz responsuwność. 
